@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Stock & Distribution Report</title>
+   <link rel="stylesheet" href="style.css">
+
+   <!-- google fonts link -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="container">
+
+      <h1 class="title">Takerhat Depot</h1>
+       <p class="report">
+        Daily Sales & Stock Report <input class="auto-date" / >
+        <!-- current date with month and year will be automatically displayed here by Javascript  -->
+      </p>
+
+
+      <table>
+
+         <thead>
+           <tr>
+             <th class="items-name">Item's Name</th>
+             <th>Opening Stock</th>
+             <th>Received</th>
+             <th>Sales</th>
+             <th>Closing Stock</th>
+           </tr>
+         </thead>
+
+         <tbody>
+
+           <tr class="row-1">
+             <td class="items-name">Broiler</td>
+             <td><input type="number" id="broiler-opening" ></td>
+             <td><input type="number" id="broiler-received" inputmode="numeric"></td>
+             <td><input type="number" id="broiler-sales" inputmode="numeric"></td>
+             <td class="broiler-closing"></td>
+           </tr><!--end of row-1-->
+
+           <tr class="row-2">
+             <td class="items-name">Layer</td>
+             <td><input type="number" id="layer-opening" inputmode="numeric"></td>
+             <td><input type="number" id="layer-received" inputmode="numeric"></td>
+             <td><input type="number" id="layer-sales" inputmode="numeric"></td>
+             <td class="layer-closing"></td>
+           </tr><!--end of row-2-->
+
+           <tr class="row-3">
+             <td class="items-name">Sonali</td>
+             <td><input type="number" id="sonali-opening" inputmode="numeric"></td>
+             <td><input type="number" id="sonali-received" inputmode="numeric"></td>
+             <td><input type="number" id="sonali-sales" inputmode="numeric"></td>
+             <td class="sonali-closing"></td>
+           </tr>
+
+           <tr class="row-4">
+            <td class="items-name">Cattle</td>
+            <td><input type="number" id="cattle-opening" ></td>
+            <td><input type="number" id="cattle-received" ></td>
+            <td><input type="number" id="cattle-sales" ></td>
+            <td class="cattle-closing"></td>
+          </tr>
+
+          <tr class="row-5">
+            <td class="items-name">Floating</td>
+            <td><input type="number" id="floating-opening"></td>
+            <td><input type="number" id="floating-received" ></td>
+            <td><input type="number" id="floating-sales" ></td>
+            <td class="floating-closing"></td>
+          </tr>
+
+          <tr class="row-6">
+            <td class="items-name">Sinking</td>
+            <td><input type="number" id="sinking-opening" inputmode="numeric"></td>
+            <td><input type="number" id="sinking-received" inputmode="numeric"></td>
+            <td><input type="number" id="sinking-sales" inputmode="numeric"></td>
+            <td class="sinking-closing"></td>
+          </tr>
+
+          <tr class="row-7 total-section">
+            <td class="total">Total = </td>
+            <td class="total-opening"></td>
+            <td class="total-received"></td>
+            <td class="total-sales"></td>
+            <td class="total-closing"></td>
+          </tr>
+
+         </tbody>
+
+       </table>
+      
+   </div>
+
+
+
+
+<script src="script.js" ></script> 
+
+
+</body>
+</html>

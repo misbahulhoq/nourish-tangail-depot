@@ -1,0 +1,118 @@
+:root {
+  /* Neon Depths — Core Palette */
+  --color-void: #050d1a; /* Near-black deep ocean */
+  --color-abyss: #0a1628; /* Dark navy base */
+  --color-deep: #0f2545; /* Elevated surface */
+  --color-mid: #1a3a6b; /* Mid-tone navy */
+
+  --color-neon-cyan: #00f5d4; /* Primary neon — electric teal */
+  --color-neon-blue: #00b4f5; /* Secondary neon — sky electric */
+  --color-neon-violet: #7b2fff; /* Accent — deep electric violet */
+  --color-neon-amber: #ffaa00; /* Warm punch accent */
+
+  --color-text-primary: #e8f4fd; /* Near-white, slightly cool */
+  --color-text-secondary: #7eb8d4; /* Muted teal-blue */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  background-color: var(--color-mid); /* #0a1628 — deep ocean base */
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 99.5%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.title {
+  font-weight: 900;
+  background-color: var(--color-deep); /* #0f2545 — deep navy surface */
+  padding: 0.25em 1em;
+  border-radius: 1em;
+  text-align: center;
+  margin-inline: auto;
+  width: 90%;
+  border: 6px solid var(--color-neon-cyan); /* #00f5d4 — electric teal border */
+  color: var(--color-text-primary); /* #e8f4fd — crisp readable text */
+  text-shadow: 0 0 18px var(--color-neon-cyan); /* subtle neon glow */
+  box-shadow: 0 0 24px rgba(0, 245, 212, 0.25); /* ambient neon halo */
+}
+
+.report {
+  font-size: 1.1rem;
+  margin-block: 1.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.auto-date {
+  min-width: 135px;
+  background-color: #381b51;
+  padding: 0.25em 0.75em;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 0.5px solid var(--color-neon-cyan); /* Add a 1px solid black border around cells */
+  padding: 8px 2px; /* Add some padding to cells */
+  text-align: center; /* Left-align cell contents */
+  width: 60px;
+}
+
+th {
+  background-color: #2d3142; /* Add a light gray background color to the header cells */
+}
+
+input {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  color: white;
+  font-size: 1.02rem;
+  width: 60px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.row-1,
+.row-3,
+.row-5 {
+  background-color: var(--color-deep); /* #0f2545 — darker row */
+}
+
+.row-2,
+.row-4,
+.row-6 {
+  background-color: var(--color-mid); /* #1a3a6b — lighter alternating row */
+}
+
+.total-sales {
+  background-color: #fe7f2d;
+}
+
+.row-7 {
+  background-color: #666;
+}
